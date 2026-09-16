@@ -1,0 +1,14 @@
+import { defineConfig } from "@lovable.dev/vite-tanstack-config";
+import netlify from "@netlify/vite-plugin-tanstack-start";
+
+export default defineConfig({
+  plugins: [netlify()],
+
+  nitro: {
+    preset: "netlify",
+  },
+
+  tanstackStart: {
+    server: { entry: "server" },
+  },
+});
