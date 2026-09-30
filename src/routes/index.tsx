@@ -29,6 +29,8 @@ import {
   Share2,
   Cog,
   Activity,
+  Send,
+  Bot,
 } from "lucide-react";
 import ScrollReveal from "../components/ScrollReveal";
 import iconAsset from "../assets/ruvigza-icon.png";
@@ -197,7 +199,6 @@ const NAV_LINKS = [
   { label: "About Us", href: "#about" },
   { label: "Services", href: "#services" },
   { label: "Process", href: "#process" },
-  { label: "Packages", href: "#packages" },
   { label: "FAQ", href: "#faq" },
   { label: "Contact", href: "#contact" },
 ];
@@ -286,7 +287,7 @@ const SERVICES = [
     title: "Meta Ads Management",
     heading: "Reach and convert your ideal customers on Facebook & Instagram",
     description:
-      "Running ads isn't the hard part — running ads that actually convert is. We manage your Meta campaigns end-to-end, from audience research to creative testing to retargeting, so your ad spend goes toward customers who are likely to buy, not just likely to scroll past.",
+      "We manage your Meta campaigns with a structured approach to audience targeting, creative testing, campaign optimization and retargeting — helping your business reach the right people and turn advertising opportunities into meaningful business actions.",
     included: [
       "Campaign strategy & audience research — identifying who to target and where they are in the buying journey",
       "Ad account setup & pixel/conversion tracking configuration",
@@ -304,7 +305,7 @@ const SERVICES = [
     title: "Google Ads Management",
     heading: "Show up when your customers are actively searching for you",
     description:
-      "Google Ads captures demand that already exists — people typing exactly what they need into a search bar. We build and manage campaigns that put you in front of high-intent searchers at the right moment, while keeping your cost-per-click and cost-per-lead under control.",
+      "We manage Google Ads campaigns designed to connect your business with people actively searching for your products or services. From keyword strategy and campaign setup to ongoing optimization and performance tracking, we focus on reaching relevant audiences and improving campaign efficiency.",
     included: [
       "Keyword research & search intent mapping",
       "Campaign setup across Search, Shopping, Performance Max, and Display as relevant to your business",
@@ -317,6 +318,25 @@ const SERVICES = [
     bestFor:
       "businesses with a clear product or service that people actively search for — ideal for capturing ready-to-buy demand rather than building awareness from scratch.",
   },
+  {
+    number: "03",
+    title: "Website Development",
+    heading: "Build a Website That Works for Your Business",
+    description:
+      "We build modern, responsive and conversion-focused websites designed around your business goals. From business websites and landing pages to service-focused pages, we create digital experiences that make it easier for visitors to understand your business, take action and connect with you.",
+    included: [
+      "Business Website & Landing Page Development",
+      "Modern, Responsive & Mobile-Friendly Design",
+      "Conversion-Focused Page Structure",
+      "Fast Loading & Performance Optimization",
+      "Basic SEO & Technical Setup",
+      "Contact Forms, WhatsApp & Lead Integration",
+      "1 Year Basic Technical Support",
+    ],
+    bestFor:
+      "Businesses that want a professional online presence that builds credibility, showcases their products or services, and makes it easier for potential customers to take action and get in touch.",
+  },
+
 ];
 
 const PACKAGES = [
@@ -417,6 +437,10 @@ const PROCESS_STEPS = [
 ];
 
 const FAQS = [
+   {
+    q: "What is RuvigzaFlow?",
+    a: "RUVIGZA Flow is a business management and workflow system that connects lead management, follow-ups, team activities, client onboarding and performance tracking into one structured workflow.",
+  },
   {
     q: "Do you guarantee leads or sales?",
     a: "No ethical agency can guarantee specific leads or sales numbers, since results depend on your offer, market, budget and many external factors. What we commit to is a structured, data-driven process: the right strategy, careful execution, continuous monitoring and transparent reporting throughout the agreed campaign scope.",
@@ -426,24 +450,16 @@ const FAQS = [
     a: "No. Your advertising budget is completely separate from our management fee. The ad spend is paid directly by you to Google and Meta through your own advertising accounts, and it remains fully under your control. Our service fee covers strategy, setup, management, optimization and reporting.",
   },
   {
-    q: "Which platforms do you manage?",
-    a: "We specialize in two platforms: Google Ads and Meta Ads. By focusing deeply on these two channels, we deliver stronger strategy, targeting and optimization for growing businesses.",
-  },
-  {
-    q: "What is performance marketing?",
-    a: "Performance marketing is a results-focused approach to digital advertising where campaigns are planned, measured and optimized using performance data. At RUVIGZA, we use platforms such as Google Ads and Meta Ads to help businesses reach relevant audiences, generate qualified leads and improve advertising efficiency.",
-  },
-  {
-    q: "Can you help generate leads through paid advertising?",
-    a: "Yes — lead generation is one of our core services. We run targeted Meta Ads and Google Ads campaigns designed specifically to bring in qualified leads for your business, whether that's through lead forms, website inquiries, calls, or WhatsApp messages. We handle everything from audience targeting and ad creative to conversion tracking, so every lead is properly captured and reported. During onboarding, we'll discuss your ideal customer profile and set a realistic monthly lead target based on your budget and industry.",
+    q: "What services does RUVIGZA provide?",
+    a: "RUVIGZA provides digital growth solutions including Google Ads, Meta Ads, website and landing page development, WhatsApp automation, lead management and workflow solutions through RUVIGZA Flow. Our services are designed to help businesses attract the right audience, generate opportunities and manage their digital growth through a structured approach.",
   },
   {
     q: "Do you work with businesses across Maharashtra?",
     a: "Yes. RUVIGZA Digital Technologies is based in Latur, Maharashtra, and works with growing businesses across Maharashtra through remote strategy, campaign management and performance reporting.",
-},
+  },
   {
-    q: "Do you provide ad creatives?",
-    a: "Ad setup is included in every package. The scope of creative work — such as ad copy, images or videos — is discussed during onboarding and documented in the service agreement, so expectations are clear on both sides before we begin.",
+    q: "Does RUVIGZA build websites and landing pages?",
+    a: "Yes. RUVIGZA provides modern, responsive and conversion-focused website and landing page development tailored to your business goals. We can build business websites and landing pages designed to showcase your services, build credibility and make it easier for potential customers to take action.",
   },
   {
     q: "Do you work with small businesses?",
@@ -548,18 +564,18 @@ function Hero() {
             <div className="size-1.5 animate-pulse rounded-full bg-electric" />
             <span className="text-[10px] font-semibold uppercase tracking-widest text-electric"> 
               <span>
-                 Performance Marketing Agency in Maharashtra for Growing Businesses
+                 Digital Marketing & Web Solutions in Maharashtra for Growing Businesses
                  </span>   
              </span>
           </div>
 
           <h1 className="text-balance text-4xl font-semibold leading-tight text-zinc-50 md:text-6xl">
-            Turn Clicks Into <span className="text-electric">Customers.</span>
+            Get More Enquiries, <span className="text-electric">Not Just More Clicks.</span>
           </h1>
 
           <p className="max-w-[56ch] text-pretty text-lg leading-relaxed text-zinc-300">
-            We help growing businesses across Maharashtra reach the right audience, generate qualified leads and improve advertising performance through strategic Google Ads and Meta Ads campaigns.
-          </p>
+           RUVIGZA helps growing businesses generate leads through Google Ads and Meta Ads, build conversion-focused websites and landing pages, and manage leads with workflows through RuvigzaFlow.
+           </p>
 
           <div className="flex flex-wrap gap-4">
             <a
@@ -580,8 +596,8 @@ function Hero() {
             </a>
           </div>
 
-          <p className="text-xs tracking-wide text-zinc-500">
-            Meta Ads • Google Ads • Campaign Strategy • Performance Optimization
+          <p className="text-xs tracking-wide text-zinc-400" style={{ fontSize: "18px" }}style={{fontSize: "20px",fontWeight: "600",color: "#ffffff",transition: "color 0.3s ease",cursor: "pointer",}}onMouseEnter={(e) => (e.currentTarget.style.color = "#00BFFF")}onMouseLeave={(e) => (e.currentTarget.style.color = "#ffffff")}>
+            Google Ads • Meta Ads • Websites • Digital Growth solutions
           </p>
         </div>
       </div>
@@ -680,9 +696,10 @@ const AIIntelligenceDashboard = () => {
 
             {/* Description */}
             <p className="mt-6 max-w-xl text-sm leading-7 text-zinc-400 md:text-base">
-              We use AI-assisted tools to analyse campaign data, identify
-              patterns, speed up creative testing and surface optimization
-              opportunities. Strategic decisions remain human-led.
+              We use AI-powered platforms and AI-assisted tools to analyse campaign
+              data, identify patterns, accelerate creative testing and surface
+              optimization opportunities. Strategic decisions remain human-led,
+              combining technology with experience and business context.
             </p>
 
             {/* AI PROCESS */}
@@ -747,7 +764,7 @@ const AIIntelligenceDashboard = () => {
 
                 <div>
                   <p className="text-xs font-semibold tracking-wider text-zinc-100">
-                    RUVIGZA AI INTELLIGENCE
+                   AI INTELLIGENCE
                   </p>
 
                   <p className="text-[10px] uppercase tracking-widest text-zinc-500">
@@ -1051,15 +1068,14 @@ function About() {
           <span className="mb-4 block text-[10px] font-semibold uppercase tracking-widest text-electric">
             About RUVIGZA
           </span>
-          <h2 className="mb-6 text-3xl font-medium text-zinc-50 md:text-4xl">
-            Your Business Needs More Than Just Marketing. It Needs Results.
+          <h2 className="mb-6 text-2xl font-medium text-zinc-50 md:text-3xl">
+            Your Business Not only Just Need Marketing.  <br /><span style={{ color: "#00BFFF" }}>It Also Needs a Growth System.</span> 
           </h2>
           <p className="leading-relaxed text-zinc-400">
-            RUVIGZA Digital Technologies is a performance marketing agency in Maharashtra focused on helping growing businesses generate qualified leads and improve their advertising performance through Google Ads, Meta Ads and data-driven strategies.
-          </p>
+           Many businesses spend on ads but struggle to get quality leads. At RUVIGZA Digital Technologies, we start by understanding your requirements, build a market-focused strategy for your Google and Meta Ads, and create websites that turn clicks into customers, so your budget works harder.</p>
           <div className="mt-6 inline-flex items-center gap-2 rounded-full border border-electric/20 bg-electric/5 px-4 py-2 text-xs font-medium text-electric">
             <Award className="size-3.5" />
-           Registered MSME — Govt. of India
+           Government Registered MSME
           </div>
         </div>
       
@@ -1201,20 +1217,18 @@ function Founder() {
             Meet the Founder
           </span>
           <h2 className="text-2xl font-medium text-zinc-50 md:text-3xl">
-            Vivek Gathude — Founder &amp; Performance Marketing Strategist
+            Vivek Gathude — Founder
           </h2>
           <p className="max-w-[56ch] text-pretty leading-relaxed text-zinc-400">
-            RUVIGZA Digital Technologies was founded with a simple vision — to help businesses reach
-            the right audience and grow through strategic performance advertising. As a founder, I
-             focus on understanding each client's business, identifying the right digital
-            opportunities, and building a structured approach to marketing, execution, and growth.
+            I'm Vivek, a B.Tech graduate in Computer Science and Engineering. I started my career in software development, where I learned to solve problems in a structured way and make decisions using data.
           </p>
           <p className="max-w-[56ch] text-pretty leading-relaxed text-zinc-400">
-            At RUVIGZA, we believe digital marketing is not just about running advertisements. It is
-            about understanding the business, reaching the right audience, testing the right
-            strategies, monitoring performance and making data-driven improvements throughout the
-            agreed campaign scope.
+            I founded RUVIGZA Digital Technologies to bring technology and digital marketing together in a practical way for growing businesses. We work on Google Ads, Meta Ads, websites, landing pages, WhatsApp automation and lead management, based on what each business actually needs.
           </p>
+          <p className="max-w-[56ch] text-pretty leading-relaxed text-zinc-400">
+            I believe every step should be organised and trackable, from generating a lead to following up, monitoring campaigns and reporting results. That's why we built RuvigzaFlow, our internal business management system that keeps leads, follow-ups and performance data in one place, so nothing slips through the cracks.</p>
+           <p className="max-w-[56ch] text-pretty leading-relaxed text-zinc-400">
+            When you work with RUVIGZA, you get a clear process, transparent execution and honest reporting, so you always know what your marketing is doing for your business.</p>
           <div className="rounded-r-xl border-l-2 border-electric bg-navy-950 p-6">
             <p className="text-sm italic leading-relaxed text-zinc-400">
               "Our mission is simple: understand the business, build the strategy, execute with
@@ -1253,13 +1267,14 @@ function WhyRUVIGZA() {
           </span>
 
           <h2 className="mb-4 text-3xl font-medium text-zinc-50 md:text-4xl">
-            More Than Just Ad Management
+            More Than Just Marketing.
+                <br />
+           <span style={{ color: "#00BFFF" }}>
+            A Connected Growth System.
+            </span>
           </h2>
-
           <p className="text-zinc-400">
-            We don’t just launch campaigns. We understand your business,
-            build a structured performance marketing strategy and use campaign data
-            to identify opportunities for improving lead generation and advertising performance.
+            We bring marketing, technology and lead management together to create a more connected digital growth system for your business. From Google Ads and Meta Ads to websites, landing pages, WhatsApp automation and lead workflows, we focus on building the right systems around your business goals.
           </p>
         </div>
 
@@ -1445,14 +1460,16 @@ function Services() {
           <span className="mb-4 block text-[10px] font-semibold uppercase tracking-widest text-electric">
             What We Do
           </span>
-
-          <h2 className="mb-4 text-3xl font-medium text-zinc-50 md:text-4xl">
-             Performance Marketing Services Focused on Growth        
-         </h2>
+           <h2 className="mb-4 text-3xl font-medium text-zinc-50 md:text-4xl">
+              Digital Solutions
+               <br />
+             <span style={{ color: "#00BFFF" }}>Built for Business Growth</span>
+            </h2>
 
           <p className="text-zinc-400">
-              Strategic performance advertising for growing businesses looking to generate qualified leads and improve results through Google Ads and Meta Ads.          </p>
-        </div>
+              We combine performance marketing, web development and automation to help growing businesses attract the right audience, convert more opportunities and manage their digital growth systematically.
+              </p>
+              </div>
 
         <div className="mx-auto max-w-5xl">
           {SERVICES.map((s, i) => {
@@ -1570,93 +1587,924 @@ function Services() {
   );
 }
 
+function RuvigzaChatbot() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [input, setInput] = useState("");
 
+  const [messages, setMessages] = useState([
+    {
+      id: 1,
+      sender: "bot",
+      text: "Hi! I'm RUVIGZA Assistant. How can I help you today?",
+    },
+  ]);
+
+  const getBotResponse = (question: string) => {
+  const q = question.toLowerCase().trim();
+
+  // --------------------------------------------------
+  // GREETINGS
+  // --------------------------------------------------
+  if (
+    q === "hi" ||
+    q === "hello" ||
+    q === "hey" ||
+    q.includes("good morning") ||
+    q.includes("good afternoon") ||
+    q.includes("good evening")
+  ) {
+    return "Hello! Welcome to RUVIGZA. I can help you learn about our digital marketing, website, WhatsApp automation, lead management and RuvigzaFlow solutions. What would you like to know?";
+  }
+
+  if (
+    q.includes("who are you") ||
+    q.includes("what are you") ||
+    q.includes("are you human") ||
+    q.includes("are you a bot")
+  ) {
+    return "I'm the RUVIGZA Assistant, a website assistant designed to answer common questions about RUVIGZA's services and solutions.";
+  }
+
+  // --------------------------------------------------
+  // ABOUT RUVIGZA
+  // --------------------------------------------------
+  if (
+    q.includes("what is ruvigza") ||
+    q.includes("what does ruvigza do") ||
+    q.includes("what do you do") ||
+    q.includes("about ruvigza") ||
+    q.includes("tell me about ruvigza")
+  ) {
+    return "RUVIGZA Digital Technologies is a digital growth company helping businesses attract, convert and manage customers through Google Ads, Meta Ads, websites, landing pages, WhatsApp automation, lead management and connected business workflows.";
+  }
+
+  if (
+    q.includes("who owns ruvigza") ||
+    q.includes("founder") ||
+    q.includes("who is the founder")
+  ) {
+    return "RUVIGZA Digital Technologies was founded by Vivek Gathude. The company focuses on helping growing businesses build practical digital growth systems.";
+  }
+
+  if (
+    q.includes("small business") ||
+    q.includes("small businesses") ||
+    q.includes("new business") ||
+    q.includes("startup")
+  ) {
+    return "Yes. RUVIGZA works with growing businesses and can help businesses at different stages build a practical digital presence and customer acquisition system.";
+  }
+
+  // --------------------------------------------------
+  // SERVICES
+  // --------------------------------------------------
+  if (
+    q.includes("service") ||
+    q.includes("services") ||
+    q.includes("what services") ||
+    q.includes("what can you do") ||
+    q.includes("solutions")
+  ) {
+    return "RUVIGZA provides Google Ads, Meta Ads, website development, landing pages, WhatsApp automation, lead management and RuvigzaFlow-based business workflows.";
+  }
+
+  if (
+    q.includes("digital marketing") ||
+    q.includes("digital marketing service") ||
+    q.includes("marketing services")
+  ) {
+    return "RUVIGZA provides digital growth solutions including Google Ads, Meta Ads, conversion-focused websites and landing pages, WhatsApp automation and structured lead management.";
+  }
+
+  // --------------------------------------------------
+  // GOOGLE ADS
+  // --------------------------------------------------
+  if (
+    q.includes("google ads") ||
+    q.includes("google advertising") ||
+    q.includes("google ad") ||
+    q.includes("search ads") ||
+    q.includes("ppc")
+  ) {
+    return "RUVIGZA manages Google Ads campaigns including campaign planning, keyword strategy, setup, targeting, optimization and performance tracking to help businesses reach relevant audiences searching for their products or services.";
+  }
+
+  if (
+    q.includes("google ads cost") ||
+    q.includes("google advertising cost") ||
+    q.includes("google ads price") ||
+    q.includes("google ads charges")
+  ) {
+    return "Google Ads costs depend on your industry, competition, location, keywords and campaign objectives. Your advertising budget is separate from RUVIGZA's service fee.";
+  }
+
+  if (
+    q.includes("google ads budget") ||
+    q.includes("google budget") ||
+    q.includes("ad budget")
+  ) {
+    return "There is no single suitable advertising budget for every business. The required budget depends on your market, competition, location, offer and campaign objective. RUVIGZA can help determine a practical starting budget.";
+  }
+
+  if (
+    q.includes("google ads guarantee") ||
+    q.includes("google leads guarantee")
+  ) {
+    return "RUVIGZA does not guarantee a fixed number of leads or sales. Campaign results depend on factors such as budget, market demand, offer, competition, targeting and customer behaviour.";
+  }
+
+  // --------------------------------------------------
+  // META ADS
+  // --------------------------------------------------
+  if (
+    q.includes("meta ads") ||
+    q.includes("facebook ads") ||
+    q.includes("instagram ads") ||
+    q.includes("facebook advertising") ||
+    q.includes("instagram advertising")
+  ) {
+    return "RUVIGZA provides Meta Ads management for Facebook and Instagram, including audience strategy, campaign setup, creative testing, optimization, retargeting and performance tracking.";
+  }
+
+  if (
+    q.includes("facebook promotion") ||
+    q.includes("instagram promotion") ||
+    q.includes("social media ads")
+  ) {
+    return "Yes. RUVIGZA can help businesses use Facebook and Instagram advertising to reach relevant audiences and generate enquiries based on their campaign objectives.";
+  }
+
+  // --------------------------------------------------
+  // WEBSITE
+  // --------------------------------------------------
+  if (
+    q.includes("website") ||
+    q.includes("web development") ||
+    q.includes("website development") ||
+    q.includes("business website")
+  ) {
+    return "Yes. RUVIGZA develops modern, responsive and conversion-focused business websites designed to build credibility, explain your services clearly and make it easier for visitors to take action.";
+  }
+
+  if (
+    q.includes("website cost") ||
+    q.includes("website price") ||
+    q.includes("website charges") ||
+    q.includes("how much website")
+  ) {
+    return "Website pricing depends on the pages, features, platform, design requirements and integrations required. Contact RUVIGZA with your requirements for the appropriate scope and pricing.";
+  }
+
+  if (
+    q.includes("no website") ||
+    q.includes("without website") ||
+    q.includes("don't have website") ||
+    q.includes("do not have website")
+  ) {
+    return "Yes. You can start without an existing website. Depending on your business and campaign objective, RUVIGZA can help you with a landing page or business website.";
+  }
+
+  // --------------------------------------------------
+  // LANDING PAGE
+  // --------------------------------------------------
+  if (
+    q.includes("landing page") ||
+    q.includes("landing pages")
+  ) {
+    return "Yes. RUVIGZA develops conversion-focused landing pages around your campaign objective, offer and target audience, with clear messaging and lead-generation elements.";
+  }
+
+  if (
+    q.includes("landing page cost") ||
+    q.includes("landing page price")
+  ) {
+    return "Landing page pricing depends on the design, content, integrations and functionality required. Share your requirements with RUVIGZA to discuss the appropriate scope.";
+  }
+
+  if (
+    q.includes("why landing page") ||
+    q.includes("landing page benefits")
+  ) {
+    return "A focused landing page can give an advertising campaign a dedicated destination with clear messaging, fewer distractions and a stronger path for visitors to enquire or take action.";
+  }
+
+  // --------------------------------------------------
+  // WHATSAPP AUTOMATION
+  // --------------------------------------------------
+  if (
+    q.includes("whatsapp") ||
+    q.includes("whatsapp automation") ||
+    q.includes("whatsapp marketing") ||
+    q.includes("whatsapp bot")
+  ) {
+    return "RUVIGZA provides WhatsApp automation solutions to help businesses manage enquiries, customer communication and follow-up workflows more efficiently.";
+  }
+
+  if (
+    q.includes("whatsapp auto reply") ||
+    q.includes("automatic reply") ||
+    q.includes("auto reply")
+  ) {
+    return "Yes. WhatsApp automation can be used for structured responses, enquiry handling and follow-up workflows depending on your business requirements.";
+  }
+
+  if (
+    q.includes("whatsapp cost") ||
+    q.includes("whatsapp automation price")
+  ) {
+    return "WhatsApp automation pricing depends on the workflow, number of messages, integrations and automation requirements. RUVIGZA can discuss the required setup based on your business process.";
+  }
+
+  // --------------------------------------------------
+  // LEAD GENERATION
+  // --------------------------------------------------
+  if (
+    q.includes("lead generation") ||
+    q.includes("generate leads") ||
+    q.includes("get leads") ||
+    q.includes("lead generation service")
+  ) {
+    return "RUVIGZA helps businesses generate and manage enquiries through digital advertising, conversion-focused websites and structured lead management workflows.";
+  }
+
+  if (
+    q.includes("how many leads") ||
+    q.includes("how much leads") ||
+    q.includes("number of leads") ||
+    q.includes("leads per month")
+  ) {
+    return "There is no fixed number of leads that can be guaranteed. Lead volume depends on your industry, offer, location, competition, advertising budget, campaign quality and market demand.";
+  }
+
+  if (
+    q.includes("qualified leads") ||
+    q.includes("quality leads")
+  ) {
+    return "RUVIGZA focuses on reaching relevant audiences and improving the campaign and conversion journey. Lead quality also depends on the offer, targeting, landing experience and the business's sales process.";
+  }
+
+  // --------------------------------------------------
+  // LEAD MANAGEMENT
+  // --------------------------------------------------
+  if (
+    q.includes("lead management") ||
+    q.includes("manage leads") ||
+    q.includes("lead tracking") ||
+    q.includes("follow up")
+  ) {
+    return "RUVIGZA helps businesses organize leads, assignments, follow-ups and sales activities through structured lead management workflows.";
+  }
+
+  if (
+    q.includes("crm") ||
+    q.includes("sales team") ||
+    q.includes("sales management")
+  ) {
+    return "RUVIGZA uses structured business workflows to help organize leads, assignments, follow-ups, sales activities and performance tracking.";
+  }
+
+  // --------------------------------------------------
+  // RUVIGZAFLOW
+  // --------------------------------------------------
+  if (
+    q.includes("ruvigzaflow") ||
+    q.includes("ruvigza flow") ||
+    q.includes("what is flow") ||
+    q === "flow"
+  ) {
+    return "RuvigzaFlow is a business management and workflow system developed by RUVIGZA. It helps organize leads, assignments, follow-ups, sales activities, client onboarding and performance tracking through one structured workflow.";
+  }
+
+  if (
+    q.includes("is ruvigzaflow crm") ||
+    q.includes("ruvigzaflow crm")
+  ) {
+    return "RuvigzaFlow is a business management and workflow system developed by RUVIGZA. It includes structured workflows for lead management, assignments, follow-ups, sales activities and performance tracking.";
+  }
+
+  if (
+    q.includes("who can use ruvigzaflow") ||
+    q.includes("ruvigzaflow for business")
+  ) {
+    return "RuvigzaFlow is designed for businesses that need a structured way to organize leads, sales activities, follow-ups, client onboarding and team workflows.";
+  }
+
+  // --------------------------------------------------
+  // SEO
+  // --------------------------------------------------
+  if (
+    q.includes("seo") ||
+    q.includes("search engine optimization") ||
+    q.includes("technical seo") ||
+    q.includes("on page seo")
+  ) {
+    return "RUVIGZA can support businesses with SEO-related website improvements, including technical and on-page optimization depending on the project scope.";
+  }
+
+  // --------------------------------------------------
+  // GOOGLE BUSINESS PROFILE
+  // --------------------------------------------------
+  if (
+    q.includes("google business profile") ||
+    q.includes("google business") ||
+    q.includes("google my business") ||
+    q.includes("gbp")
+  ) {
+    return "RUVIGZA can help businesses with Google Business Profile setup and optimization as part of suitable growth solutions.";
+  }
+
+  // --------------------------------------------------
+  // INDUSTRIES
+  // --------------------------------------------------
+  if (
+    q.includes("gym") ||
+    q.includes("fitness center") ||
+    q.includes("fitness business")
+  ) {
+    return "Yes. RUVIGZA can help gyms and fitness businesses with digital advertising, enquiry generation, landing pages, WhatsApp follow-up and lead management.";
+  }
+
+  if (
+    q.includes("coaching") ||
+    q.includes("classes") ||
+    q.includes("coaching institute") ||
+    q.includes("education")
+  ) {
+    return "Yes. Coaching institutes and education businesses can use Google Ads, Meta Ads, landing pages, WhatsApp workflows and lead management to organize student enquiries.";
+  }
+
+  if (
+    q.includes("real estate") ||
+    q.includes("property") ||
+    q.includes("builder") ||
+    q.includes("realty")
+  ) {
+    return "Yes. RUVIGZA can support real estate businesses with digital advertising, landing pages, enquiry management and structured follow-up workflows.";
+  }
+
+  if (
+    q.includes("clinic") ||
+    q.includes("hospital") ||
+    q.includes("doctor") ||
+    q.includes("healthcare")
+  ) {
+    return "Yes. RUVIGZA can help suitable healthcare businesses with digital presence, advertising, websites, landing pages and enquiry management, subject to the applicable advertising and platform guidelines.";
+  }
+
+  if (
+    q.includes("salon") ||
+    q.includes("beauty") ||
+    q.includes("spa")
+  ) {
+    return "Yes. Salons and beauty businesses can use digital advertising, local presence, landing pages, WhatsApp communication and structured enquiry management.";
+  }
+
+  if (
+    q.includes("restaurant") ||
+    q.includes("hotel") ||
+    q.includes("cafe") ||
+    q.includes("food business")
+  ) {
+    return "Yes. RUVIGZA can support restaurants, cafes and hospitality businesses with digital advertising, websites, local visibility and customer enquiry workflows.";
+  }
+
+  // --------------------------------------------------
+  // PRICING
+  // --------------------------------------------------
+  if (
+    q.includes("price") ||
+    q.includes("pricing") ||
+    q.includes("cost") ||
+    q.includes("fees") ||
+    q.includes("charges") ||
+    q.includes("package") ||
+    q.includes("packages")
+  ) {
+    return "RUVIGZA pricing depends on the services and scope your business needs. Advertising budget is separate from the service fee. Contact RUVIGZA to discuss your requirements and get the appropriate service details.";
+  }
+
+  if (
+    q.includes("monthly") ||
+    q.includes("monthly plan") ||
+    q.includes("monthly service")
+  ) {
+    return "Service structure depends on the selected solution and scope. RUVIGZA can discuss the appropriate engagement model based on your business requirements.";
+  }
+
+  if (
+    q.includes("ad budget included") ||
+    q.includes("advertising budget included") ||
+    q.includes("budget included")
+  ) {
+    return "No. The advertising budget paid to platforms such as Google or Meta is separate from RUVIGZA's service fee.";
+  }
+
+  // --------------------------------------------------
+  // RESULTS / GUARANTEE
+  // --------------------------------------------------
+  if (
+    q.includes("guarantee") ||
+    q.includes("guaranteed") ||
+    q.includes("guarantee leads") ||
+    q.includes("guarantee sales")
+  ) {
+    return "RUVIGZA does not guarantee specific lead or sales numbers. Results depend on factors such as your offer, market, budget, competition and customer demand. We focus on structured strategy, execution, optimization and transparent reporting.";
+  }
+
+  if (
+    q.includes("result") ||
+    q.includes("results") ||
+    q.includes("when will i get leads") ||
+    q.includes("how long for results")
+  ) {
+    return "Campaign performance can vary by business and market. Initial data helps identify what is working, and campaigns can then be optimized based on performance. There is no universal timeline or guaranteed result.";
+  }
+
+  if (
+    q.includes("report") ||
+    q.includes("reporting") ||
+    q.includes("performance report")
+  ) {
+    return "Performance tracking and reporting can be part of the campaign management process, helping businesses understand spend, enquiries, campaign performance and optimization areas.";
+  }
+
+  // --------------------------------------------------
+  // PROCESS
+  // --------------------------------------------------
+  if (
+    q.includes("how does it work") ||
+    q.includes("how to start") ||
+    q.includes("how can i start") ||
+    q.includes("process") ||
+    q.includes("working process")
+  ) {
+    return "The process generally starts with understanding your business and goals, reviewing your current digital presence, selecting the right solution, setting up the required assets and then launching, tracking and optimizing the campaign or workflow.";
+  }
+
+  if (
+    q.includes("what do you need from me") ||
+    q.includes("what information do you need") ||
+    q.includes("documents required")
+  ) {
+    return "The requirements depend on the service. Usually we need basic business information, your goals, target audience, service or product details and access to the relevant business or advertising platforms when required.";
+  }
+
+  if (
+    q.includes("how long does setup take") ||
+    q.includes("setup time") ||
+    q.includes("campaign setup")
+  ) {
+    return "Setup time depends on the service, account readiness, creative requirements, website or landing page requirements and the overall project scope.";
+  }
+
+  if (
+    q.includes("existing account") ||
+    q.includes("my google account") ||
+    q.includes("my meta account")
+  ) {
+    return "Where applicable, RUVIGZA can work with client-owned advertising and business accounts. Account ownership and access remain with the client.";
+  }
+
+  // --------------------------------------------------
+  // LOCATION
+  // --------------------------------------------------
+  if (
+    q.includes("location") ||
+    q.includes("where are you") ||
+    q.includes("where is ruvigza") ||
+    q.includes("latur")
+  ) {
+    return "RUVIGZA Digital Technologies is based in Latur, Maharashtra and works with growing businesses across Maharashtra.";
+  }
+
+  if (
+    q.includes("pune") ||
+    q.includes("mumbai") ||
+    q.includes("nagpur") ||
+    q.includes("nashik") ||
+    q.includes("aurangabad")
+  ) {
+    return "RUVIGZA works with businesses across Maharashtra. The right engagement can be discussed based on your business location and requirements.";
+  }
+
+  if (
+    q.includes("outside maharashtra") ||
+    q.includes("other states") ||
+    q.includes("pan india") ||
+    q.includes("india")
+  ) {
+    return "RUVIGZA's focus includes growing businesses across Maharashtra. For businesses outside Maharashtra, you can contact us and discuss your requirements.";
+  }
+
+  // --------------------------------------------------
+  // CONTACT
+  // --------------------------------------------------
+  if (
+    q.includes("contact") ||
+    q.includes("contact you") ||
+    q.includes("email") ||
+    q.includes("talk to someone") ||
+    q.includes("speak to someone") ||
+    q.includes("human") ||
+    q.includes("sales team")
+  ) {
+    return "You can contact RUVIGZA at hello@ruvigza.in or use WhatsApp to discuss your business and growth requirements.";
+  }
+
+  if (
+    q.includes("email address") ||
+    q.includes("email id")
+  ) {
+    return "You can email RUVIGZA at hello@ruvigza.in.";
+  }
+
+  if (
+    q.includes("whatsapp number") ||
+    q.includes("whatsapp contact") ||
+    q.includes("whatsapp you")
+  ) {
+    return "You can contact RUVIGZA through WhatsApp using the WhatsApp option available on this website.";
+  }
+
+  if (
+    q.includes("get started") ||
+    q.includes("start now") ||
+    q.includes("interested") ||
+    q.includes("i want to start")
+  ) {
+    return "Great! You can contact RUVIGZA through WhatsApp or email and share your business, current challenge and growth goal. The team can then discuss the appropriate solution with you.";
+  }
+
+  // --------------------------------------------------
+  // WEBSITE / DIGITAL PRESENCE
+  // --------------------------------------------------
+  if (
+    q.includes("digital presence") ||
+    q.includes("online presence") ||
+    q.includes("online business")
+  ) {
+    return "RUVIGZA can help strengthen your digital presence through websites, landing pages, Google and Meta advertising, WhatsApp communication and structured lead management.";
+  }
+
+  if (
+    q.includes("website and ads") ||
+    q.includes("ads and website") ||
+    q.includes("complete solution")
+  ) {
+    return "Yes. RUVIGZA can combine advertising, conversion-focused web experiences, WhatsApp communication and lead management into a connected growth system based on your requirements.";
+  }
+
+  // --------------------------------------------------
+  // AI
+  // --------------------------------------------------
+  if (
+    q.includes("ai") ||
+    q.includes("artificial intelligence") ||
+    q.includes("ai marketing")
+  ) {
+    return "RUVIGZA uses modern advertising platforms and technology to support faster analysis, campaign optimization and smarter digital workflows. Human strategy and business understanding remain an important part of the process.";
+  }
+
+  // --------------------------------------------------
+  // TRUST / TRANSPARENCY
+  // --------------------------------------------------
+  if (
+    q.includes("why ruvigza") ||
+    q.includes("why should i choose") ||
+    q.includes("why choose ruvigza")
+  ) {
+    return "RUVIGZA focuses on connecting marketing, technology and business workflows instead of treating advertising as an isolated activity. The goal is to create a clearer journey from attracting prospects to managing enquiries and customers.";
+  }
+
+  if (
+    q.includes("transparent") ||
+    q.includes("transparency") ||
+    q.includes("transparent reporting")
+  ) {
+    return "RUVIGZA focuses on structured execution, performance tracking and transparent communication so businesses can understand what is being worked on and how campaigns are performing.";
+  }
+
+  // --------------------------------------------------
+  // FALLBACK
+  // --------------------------------------------------
+  return "I can help you with RUVIGZA's services, Google Ads, Meta Ads, websites, landing pages, WhatsApp automation, lead generation, pricing, business workflows and RuvigzaFlow. You can also ask about working with RUVIGZA for your specific business.";
+};
+
+  const sendMessage = (text?: string) => {
+    const question = (text ?? input).trim();
+
+    if (!question) return;
+
+    const userMessage = {
+      id: Date.now(),
+      sender: "user",
+      text: question,
+    };
+
+    const botMessage = {
+      id: Date.now() + 1,
+      sender: "bot",
+      text: getBotResponse(question),
+    };
+
+    setMessages((prev) => [
+      ...prev,
+      userMessage,
+      botMessage,
+    ]);
+
+    setInput("");
+  };
+
+  const handleKeyDown = (
+    e: React.KeyboardEvent<HTMLInputElement>,
+  ) => {
+    if (e.key === "Enter") {
+      sendMessage();
+    }
+  };
+
+  return (
+    <>
+      {!isOpen && (
+        <button
+          type="button"
+          onClick={() => setIsOpen(true)}
+          aria-label="Open RUVIGZA Assistant"
+          className="fixed bottom-6 right-6 z-50 flex size-14 items-center justify-center rounded-full bg-electric text-white shadow-[0_0_30px_rgba(0,191,255,0.35)] ring-1 ring-electric/50 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_rgba(0,191,255,0.5)]"
+        >
+          <Bot className="size-6" />
+        </button>
+      )}
+
+      {isOpen && (
+        <div className="fixed bottom-6 right-6 z-50 flex w-[calc(100vw-32px)] max-w-[390px] flex-col overflow-hidden rounded-2xl bg-navy-950 shadow-[0_25px_80px_rgba(0,0,0,0.55)] ring-1 ring-electric/25">
+
+          {/* Header */}
+          <div className="flex items-center justify-between border-b border-white/5 bg-navy-900 px-5 py-4">
+            <div className="flex items-center gap-3">
+              <div className="flex size-10 items-center justify-center rounded-full bg-electric/10 text-electric ring-1 ring-electric/20">
+                <Bot className="size-5" />
+              </div>
+
+              <div>
+                <p className="text-sm font-medium text-zinc-100">
+                  RUVIGZA Assistant
+                </p>
+                <p className="text-[10px] text-zinc-500">
+                  Digital Growth Assistant
+                </p>
+              </div>
+            </div>
+
+            <button
+              type="button"
+              onClick={() => setIsOpen(false)}
+              aria-label="Close chatbot"
+              className="flex size-8 items-center justify-center rounded-full text-zinc-500 transition hover:bg-white/5 hover:text-zinc-200"
+            >
+              <X className="size-4" />
+            </button>
+          </div>
+
+          {/* Messages */}
+          <div className="flex h-[390px] flex-col gap-3 overflow-y-auto px-4 py-5">
+            {messages.map((message) => (
+              <div
+                key={message.id}
+                className={`flex ${
+                  message.sender === "user"
+                    ? "justify-end"
+                    : "justify-start"
+                }`}
+              >
+                <div
+                  className={`max-w-[82%] rounded-2xl px-4 py-3 text-xs leading-relaxed ${
+                    message.sender === "user"
+                      ? "rounded-br-md bg-electric text-white"
+                      : "rounded-bl-md bg-navy-900 text-zinc-300 ring-1 ring-white/5"
+                  }`}
+                >
+                  {message.text}
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Quick Questions */}
+          <div className="border-t border-white/5 px-4 py-3">
+            <p className="mb-2 text-[9px] font-semibold uppercase tracking-widest text-zinc-600">
+              Quick Questions
+            </p>
+
+            <div className="flex gap-2 overflow-x-auto pb-1">
+              {[
+                "What services do you provide?",
+                "What is RuvigzaFlow?",
+                "Do you build websites?",
+              ].map((question) => (
+                <button
+                  key={question}
+                  type="button"
+                  onClick={() => sendMessage(question)}
+                  className="shrink-0 rounded-full bg-navy-900 px-3 py-2 text-[10px] text-zinc-400 ring-1 ring-white/5 transition hover:text-electric hover:ring-electric/20"
+                >
+                  {question}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          {/* Input */}
+          <div className="border-t border-white/5 bg-navy-900 p-3">
+            <div className="flex items-center gap-2 rounded-xl bg-navy-950 p-1.5 ring-1 ring-white/5">
+              <input
+                type="text"
+                value={input}
+                onChange={(e) => setInput(e.target.value)}
+                onKeyDown={handleKeyDown}
+                placeholder="Ask about RUVIGZA..."
+                className="min-w-0 flex-1 bg-transparent px-3 py-2 text-xs text-zinc-200 outline-none placeholder:text-zinc-600"
+              />
+
+              <button
+                type="button"
+                onClick={() => sendMessage()}
+                aria-label="Send message"
+                className="flex size-9 shrink-0 items-center justify-center rounded-lg bg-electric text-white transition hover:bg-electric/90"
+              >
+                <Send className="size-4" />
+              </button>
+            </div>
+          </div>
+
+        </div>
+      )}
+    </>
+  );
+}
 
 function Packages() {
   return (
-    <section id="packages" className="bg-navy-950 py-24">
-      <div className="mx-auto max-w-6xl space-y-16 px-6">
+    <section id="flow" className="bg-navy-950 py-24">
+      <div className="mx-auto max-w-6xl space-y-12 px-6">
 
+        {/* Header & Information */}
         <ScrollReveal>
-          <div className="space-y-4 text-center">
+          <div className="mx-auto max-w-4xl text-center">
+
             <span className="block text-[10px] font-semibold uppercase tracking-widest text-electric">
-              Packages
+              Leads Management Solution
             </span>
 
-            <h2 className="text-3xl font-medium text-zinc-50 md:text-4xl">
-              Performance Advertising Solutions
+            <h2 className="mt-4 text-3xl font-medium text-zinc-50 md:text-4xl">
+              Your Business. Your Leads.
+              <br />
+              <span style={{ color: "#00BFFF" }}>
+                One Connected Workflow.
+              </span>
             </h2>
 
-            <p className="mx-auto max-w-[56ch] text-zinc-400">
-              Your Budget. Your Account. Your Control.
+            <p className="mx-auto mt-3 max-w-[68ch] text-sm leading-relaxed text-zinc-500">
+              RuvigzaFlow is a business management and workflow system
+              developed to organize the journey from lead generation to
+              client management.
             </p>
+
+            <p className="mx-auto mt-3 max-w-[68ch] text-sm leading-relaxed text-zinc-500">
+              It brings leads, assignments, follow-ups, sales activities,
+              client onboarding and performance tracking into a structured
+              workflow — helping teams stay organized and giving businesses
+              better visibility across their operations.
+            </p>
+
           </div>
         </ScrollReveal>
 
-        <div className="grid gap-8 md:grid-cols-3">
-          {PACKAGES.map((p) => (
-            <div
-            key={p.tag}
-            className={`flex h-full flex-col rounded-2xl bg-navy-900 p-8 ${CARD_HOVER} ring-1 ${
-               p.popular ? "ring-electric/30" : "ring-white/5"
-              }`}
-              >
-                <div className="mb-2 flex items-start justify-between">
-                  <h4 className="text-lg font-medium text-zinc-100">
-                    {p.tag}
-                  </h4>
 
-                  {p.popular && (
-                    <span className="rounded-full bg-electric/20 px-2 py-0.5 text-[10px] uppercase tracking-tighter text-electric">
-                      Most Popular
-                    </span>
-                  )}
-                </div>
+        {/* Key Features */}
+        <ScrollReveal delay={100}>
+          <div className="mx-auto grid max-w-5xl gap-4 sm:grid-cols-2 lg:grid-cols-3">
 
-                <p className="mb-6 text-base font-medium text-zinc-100">
-                  {p.name}
-                </p>
+            <div className="rounded-xl bg-navy-900 p-5 text-center ring-1 ring-white/5">
+              <p className="text-sm font-medium text-zinc-100">
+                Lead Management
+              </p>
+              <p className="mt-2 text-xs leading-relaxed text-zinc-500">
+                Organize and manage business leads in one place.
+              </p>
+            </div>
 
-                <p className="mb-4 text-[10px] font-semibold uppercase tracking-widest text-zinc-500">
-                  Includes:
-                </p>
 
-                <ul className="mb-8 flex-1 space-y-3">
-                  {p.features.map((f) => (
-                    <li
-                      key={f}
-                      className="flex items-start gap-2 text-sm text-zinc-300"
-                    >
-                      <span className="mt-1 shrink-0 text-electric">
-                        •
-                      </span>
-                      {f}
-                    </li>
-                  ))}
-                </ul>
+            <div className="rounded-xl bg-navy-900 p-5 text-center ring-1 ring-white/5">
+              <p className="text-sm font-medium text-zinc-100">
+                Team Management
+              </p>
+              
+              <p className="mt-2 text-xs leading-relaxed text-zinc-500">
+                Keep client onboarding and service activities organized.
+              </p>
+            </div>
 
-                <a
-                  href="#contact"
-                  className="w-full rounded-md bg-electric py-2.5 text-center text-sm font-medium text-white ring-1 ring-electric transition-all duration-300 hover:bg-electric/90 hover:shadow-[0_0_20px_rgba(0,210,255,0.25)]"
-                >
-                  Get Started
-                </a>
-              </div>
-            
-          ))}
-        </div>
+            <div className="rounded-xl bg-navy-900 p-5 text-center ring-1 ring-electric/20">
+              <p className="text-sm font-medium text-electric">
+                Structured Workflow
+              </p>
+              <p className="mt-2 text-xs leading-relaxed text-zinc-500">
+                Connect your business activities through one workflow.
+              </p>
+            </div>
 
+          </div>
+        </ScrollReveal>
+
+
+        {/* Dashboard Screenshot */}
         <ScrollReveal delay={200}>
-          <div className="mx-auto max-w-3xl rounded-xl bg-navy-900 p-6 text-center ring-1 ring-white/5">
-            <p className="text-xs leading-relaxed text-zinc-400">
-              Advertising budget is separate and controlled directly by the
-              client. Campaigns are managed through authorized access to your
-              own Google Ads and Meta advertising accounts. Advertising spend
-              is paid directly to the respective platforms and remains separate
-              from RUVIGZA & service fee. Campaign duration and service
-              scope are mutually agreed during onboarding and documented in the
-              service agreement.
+          <div className="relative mx-auto max-w-5xl pt-4">
+
+            {/* Outer Glow */}
+            <div className="absolute -inset-8 rounded-[40px] bg-electric/10 blur-3xl" />
+
+            {/* Dashboard Frame */}
+            <div className="relative rounded-2xl bg-navy-900 p-2 ring-1 ring-electric/25 shadow-[0_0_70px_rgba(0,191,255,0.15)]">
+
+             
+
+              <div className="relative overflow-hidden rounded-[22px] bg-navy-950 p-1.5 ring-1 ring-white/10 shadow-[0_20px_70px_rgba(0,0,0,0.45)]">
+              <img
+              src="/ruvigza-flow.png"
+              alt="RUVIGZA Flow business management dashboard"
+              className="block w-full rounded-[18px] object-cover transition-transform duration-700 hover:scale-[1.015]"
+                />
+             </div>
+            </div>
+
+            {/* Caption */}
+            <p className="mt-5 text-center text-xs text-zinc-500">
+              "RuvigzaFlow - Business Management Dashboard"
             </p>
+
+          </div>
+        </ScrollReveal>
+
+
+        {/* Connected Workflow */}
+        <ScrollReveal delay={300}>
+          <div className="rounded-2xl bg-navy-900 px-6 py-7 text-center ring-1 ring-white/5">
+
+            <p className="text-[10px] font-semibold uppercase tracking-widest text-electric">
+              CONNECTED WORKFLOW
+            </p>
+
+            <h3 className="mt-2 text-lg font-medium text-zinc-100">
+              From Lead to Client Management
+            </h3>
+
+            <div className="mt-6 flex flex-wrap items-center justify-center gap-2 text-xs md:gap-3 md:text-sm">
+
+              <span className="rounded-full bg-navy-950 px-4 py-2 text-zinc-300 ring-1 ring-white/10">
+                Lead
+              </span>
+
+              <span className="text-electric">→</span>
+
+              <span className="rounded-full bg-navy-950 px-4 py-2 text-zinc-300 ring-1 ring-white/10">
+                Assign
+              </span>
+
+              <span className="text-electric">→</span>
+
+              <span className="rounded-full bg-navy-950 px-4 py-2 text-zinc-300 ring-1 ring-white/10">
+                Contact
+              </span>
+
+              <span className="text-electric">→</span>
+
+              <span className="rounded-full bg-navy-950 px-4 py-2 text-zinc-300 ring-1 ring-white/10">
+                Follow-up
+              </span>
+
+              <span className="text-electric">→</span>
+
+              <span className="rounded-full bg-navy-950 px-4 py-2 text-zinc-300 ring-1 ring-white/10">
+                Convert
+              </span>
+
+              <span className="text-electric">→</span>
+
+              <span className="rounded-full bg-navy-950 px-4 py-2 text-zinc-300 ring-1 ring-white/10">
+                Client
+              </span>
+
+              <span className="text-electric">→</span>
+
+              <span className="rounded-full bg-electric/10 px-4 py-2 text-electric ring-1 ring-electric/30">
+                Track & Report
+              </span>
+
+            </div>
+
           </div>
         </ScrollReveal>
 
@@ -1664,7 +2512,6 @@ function Packages() {
     </section>
   );
 }
-
 function Process() {
   return (
     <ScrollReveal>
@@ -1775,11 +2622,14 @@ function Contact() {
             Get In Touch
           </span>
           <h2 className="text-3xl font-medium text-zinc-50 md:text-4xl">
-            Ready to Explore Your Growth Opportunities?
+           Ready to Explore Your
+          <br />
+          <span style={{ color: "#00BFFF" }}>
+           Growth Opportunities?
+          </span>
           </h2>
           <p className="max-w-[48ch] leading-relaxed text-zinc-400">
-            Tell us about your business and advertising goals. Let's discuss how strategic
-            performance advertising can support your growth.
+            Tell us about your business, goals and current digital challenges. Let’s discuss how the right combination of marketing, technology and connected workflows can support your business growth.
           </p>
           <div className="space-y-6">
             <a
@@ -1796,15 +2646,25 @@ function Contact() {
                 <p className="text-zinc-200">+91 8080193896</p>
               </div>
             </a>
-            <a href={`mailto:${EMAIL}`} className="flex items-center gap-4">
-              <div className="flex size-10 items-center justify-center rounded-full bg-navy-900 text-electric ring-1 ring-white/10">
-                <Mail className="size-4" />
-              </div>
-              <div>
-                <p className="text-xs uppercase tracking-widest text-zinc-500">Email</p>
-                <p className="text-zinc-200">{EMAIL}</p>
-              </div>
-            </a>
+            <a
+  href="https://mail.google.com/mail/?view=cm&fs=1&to=hello@ruvigza.in"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex items-center gap-4"
+>
+  <div className="flex size-10 items-center justify-center rounded-full bg-navy-900 text-electric ring-1 ring-white/10">
+    <Mail className="size-4" />
+  </div>
+
+  <div>
+    <p className="text-sm text-zinc-500">
+      Email Us
+    </p>
+    <p className="text-sm font-medium text-zinc-100">
+      hello@ruvigza.in
+    </p>
+  </div>
+</a>
             <div className="flex items-center gap-4">
               <div className="flex size-10 items-center justify-center rounded-full bg-navy-900 text-electric ring-1 ring-white/10">
                 <MapPin className="size-4" />
@@ -1880,8 +2740,8 @@ function Footer() {
     <footer className="relative overflow-hidden border-t border-electric/20 bg-gradient-to-b from-navy-900 via-[#24101f] to-navy-950">
       <div className="pointer-events-none absolute -left-20 -right-20 top-0 h-px bg-gradient-to-r from-transparent via-electric/40 to-transparent" />
       <div className="pointer-events-none absolute -right-40 top-0 h-64 w-64 rounded-full bg-electric/5 blur-3xl" />
-      <div className="mx-auto grid max-w-6xl gap-8 px-6 py-10 md:grid-cols-3">
-        <div className="space-y-3">
+      <div className="mx-auto grid max-w-6xl gap-6 px-6 py-6 md:grid-cols-3">
+        <div className="space-y-2">
           <div className="flex items-center gap-3">
             <img
             src={iconAsset}
@@ -1908,7 +2768,7 @@ function Footer() {
           <p className="mb-4 text-[10px] font-semibold uppercase tracking-widest text-zinc-500">
             Quick Links
           </p>
-          <ul className="space-y-3 text-sm text-zinc-400">
+          <ul className="space-y-2 text-sm text-zinc-400">
             {[
               { label: "Home", href: "#home" },
               { label: "Services", href: "#services" },
@@ -1936,7 +2796,7 @@ function Footer() {
         </div>
       </div>
       <div className="border-t border-white/5">
-       <div className="mx-auto flex max-w-6xl flex-col items-center gap-3 px-6 py-5 text-center md:flex-row md:justify-between md:text-left">
+       <div className="mx-auto flex max-w-6xl flex-col items-center gap-2 px-6 py-3 text-center md:flex-row md:justify-between md:text-left">
           <div className="space-y-1">
             <p className="text-xs font-medium text-zinc-500">
               © 2026 RUVIGZA Digital Technologies. All Rights Reserved.
@@ -1972,21 +2832,14 @@ function Index() {
         <Founder />
         <Services />
         <WhyRUVIGZA />
-        <Packages />
+        <Packages/>
         <Process />
         <Faq />
         <Contact />
       </main>
       <Footer />
-      <a
-        href={WHATSAPP_URL}
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Chat on WhatsApp"
-        className="fixed bottom-6 right-6 z-50 flex size-12 items-center justify-center rounded-full bg-electric text-white shadow-lg shadow-electric/30 transition-transform hover:scale-105"
-      >
-        <MessageCircle className="size-5" />
-      </a>
+
+      <RuvigzaChatbot />
     </div>
     
   );
