@@ -1,248 +1,55 @@
-# Ruvigza Growth Engine
+# RUVIGZA Digital Technologies website
 
-i am building a agency of performance marketing my agency name is RUVIGZA DITIGAL TECHNOLOGIES and we are mainly deals in google ads and meta ads focusing on 3 tire city business growth and online presence we need a landing page for our agency the landing page website should be attractive it should have all the details needed. i am giving the logo of brand and name of brand. Ruvigza Digital Technologies logo
-RUVIGZA
-Digital Technologies
-Home
-About Us
-Services
-FAQ
-Contact
-Book a Strategy Call
-Performance Marketing Agency for Growing Businesses
-Turn Clicks Into Customers.
-We help growing businesses reach the right audience, generate relevant enquiries and improve their advertising performance through strategic Meta Ads and Google Ads campaigns.
+Responsive React + Vite multi-page website structure.
 
-Book a Free Strategy Call
-Chat on WhatsApp
-Meta Ads • Google Ads • Campaign Strategy • Performance Optimization
+## Pages
+- `/` Home / two visitor paths
+- `/about/` Founder profile, vision and trust principles
+- `/blog/` Sample digital marketing article
+- `/contact/` Enquiry form and email contact
+- `/marketing/` Google Ads, Meta Ads, SEO, Website Development, WhatsApp Automation
+- `/tech/` RuvigzaFlow CRM + ERP demo, Custom Software, White Label Software
 
-RUVIGZA performance marketing dashboard showing rising campaign metrics, ROAS, CPA, conversion rate and funnel stages
-About RUVIGZA
-Your Business Needs More Than Just Marketing. It Needs Results.
-Getting views, likes and clicks is only the beginning. At RUVIGZA, we focus on turning digital attention into meaningful business enquiries and qualified opportunities.
+## Run locally
+1. Install Node.js (LTS).
+2. Extract this ZIP and open a terminal in the project folder.
+3. Run `npm install`
+4. Run `npm run dev`
+5. Open the local URL printed by Vite.
 
-We combine strategic Google Ads and Meta Ads campaigns to help businesses reach the right audience and create more effective customer acquisition opportunities.
+Run `npm run build` before deployment.
 
-Our Approach
-We Help Businesses Build Better Customer Acquisition Systems.
-RUVIGZA Digital Technologies is a performance advertising agency focused on helping growing businesses reach the right audience and generate meaningful business enquiries through strategic Meta Ads and Google Ads campaigns.
+## Contact form behavior
+The form validates the required fields, then opens WhatsApp for +91 8080193896 with the enquiry details prefilled. The visitor must review and send the message in WhatsApp. The email link opens Gmail compose addressed to hello@ruvigza.in.
 
-Our core services include Meta Ads and Google Ads campaign management.
+## Important
+RuvigzaFlow is described as a demo concept. WhatsApp automation is presented as a service to discuss and scope, not as a claim that a finished automation platform is already live. The portrait supplied for the founder section has been added as requested; please confirm it is the intended founder portrait before publishing.
+Vite SPA deployment may need host rewrite rules so direct visits to `/about/`, `/blog/`, `/contact/`, `/marketing/`, and `/tech/` serve `index.html`.
 
-Our approach is simple: understand the business, identify the right audience, build a campaign strategy, execute with purpose and optimize based on performance data.
 
-V
-Meet the Founder
-Vivek Gathude
-Founder & Performance Marketing Strategist — RUVIGZA Digital Technologies
+## Recent visual and SEO updates
+- Added supplied AI-brain artwork as the Home hero background with a dark overlay for text readability.
+- Added supplied RuvigzaFlow logo to the CRM + ERP demo card.
+- Added RUVIGZA logo as browser favicon and Apple touch icon.
+- Adjusted Tech Solutions accents to a brighter, more balanced green.
+- Added basic description, robots directives, Open Graph metadata, `public/robots.txt`, and `public/sitemap.xml`.
 
-RUVIGZA Digital Technologies was founded with a simple vision — to help businesses reach the right audience and grow through strategic performance advertising.
+## Before production launch
+- Confirm the canonical domain and sitemap URLs match the final live domain.
+- Add server/hosting security headers (Content-Security-Policy, X-Content-Type-Options, Referrer-Policy, and frame protection) in hosting configuration; these cannot be reliably enforced from React alone.
+- Enable HTTPS, keep dependencies updated, and verify every form/route on the production host.
+- This is a client-side Vite app; configure the host to serve `index.html` for the app routes. For stronger SEO, consider prerendering or SSR and unique per-page titles/descriptions.
 
-As the founder, Vivek focuses on understanding each client's business, identifying the right digital opportunities, and building a structured approach to marketing, execution, and growth.
 
-At RUVIGZA, we believe digital marketing is not just about running advertisements. It is about understanding the business, reaching the right audience, testing the right strategies, monitoring performance and making data-driven improvements throughout the agreed campaign scope.
+## Visual and chatbot update
+- Increased hero paragraph and path prompt contrast with electric-blue text and shadow.
+- Added hover polish, layered card depth, focus-visible keyboard states, and reduced-motion support.
+- Added a floating RUVIGZA FAQ chatbot on every page. It answers common questions about company, founder, services, RuvigzaFlow demo, pricing approach, and contact details using a local knowledge base. It does not call an external AI service and does not collect/send visitor data.
+- The chatbot is an FAQ assistant, not a generative AI agent. To answer arbitrary questions with live AI, a secure backend/API integration would be required; never put private API keys in frontend code.
 
-Our mission is simple: understand the business, build the strategy, execute with purpose, and grow together.
 
-— Vivek Gathude
-Founder, RUVIGZA Digital Technologies
-
-Why Ruvigza
-We Focus on Business Outcomes, Not Vanity Metrics.
-🎯
-Goal Focused
-Every campaign starts with a clear business objective.
-
-📊
-Data Driven
-We use campaign data to understand what works and what needs improvement.
-
-🔄
-Performance-Based Optimization
-Campaigns are monitored and optimized based on performance.
-
-🤝
-Transparent
-Your advertising budget and agency fees remain clearly separated.
-
-What We Do
-Digital Marketing Focused on Growth
-01
-Meta Ads
-Reach potential customers on Facebook and Instagram with targeted campaigns designed to generate leads, enquiries and sales.
-
-Campaign Strategy • Audience Targeting • Ad Management • Optimization
-
-02
-Google Ads
-Connect with customers who are actively searching for your products or services through targeted Google Search campaigns.
-
-Keyword Research • Search Ads • Conversion Tracking • Optimization
-
-Packages
-Performance Advertising Solutions
-Google Ads
-Google Ads Management
-Up to 3 Google Ads Campaigns
-
-Includes:
-
-Business & Requirement Analysis
-Campaign Strategy
-Keyword Research
-Campaign Setup
-Ad Setup
-Targeting
-Regular Monitoring
-Data-Driven Optimization
-3 Optimization Cycles
-Performance Reporting
-Campaign Data Handover
-Advertising budget is separate and controlled directly by the client.
-Campaign duration and service scope are mutually agreed during onboarding and documented in the service agreement.
-
-Meta Ads
-Meta Ads Management
-Up to 3 Meta Ads Campaigns
-
-Includes:
-
-Business & Requirement Analysis
-Campaign Strategy
-Audience Research
-Campaign Setup
-Ad Setup
-Targeting
-Regular Monitoring
-Data-Driven Optimization
-3 Optimization Cycles
-Performance Reporting
-Campaign Data Handover
-Advertising budget is separate and controlled directly by the client.
-Campaign duration and service scope are mutually agreed during onboarding and documented in the service agreement.
-
-Google + Meta
-6 Campaigns
-3 Google Ads + 3 Meta Ads
-
-Includes:
-
-Deep Business Understanding
-Requirement Analysis
-Google Ads Strategy
-Meta Ads Strategy
-Keyword Research
-Audience Research
-Campaign Setup
-Ad Setup
-Regular Monitoring
-Data-Driven Optimization
-3 Optimization Cycles
-Performance Reporting
-Campaign Data Handover
-Advertising budget is separate and controlled directly by the client.
-Campaign duration and service scope are mutually agreed during onboarding and documented in the service agreement.
-
-Your Budget. Your Account. Your Control.
-Your advertising budget remains under your control. Campaigns are managed through authorized access to your own Google Ads and Meta advertising accounts. Advertising spend is paid directly to the respective platforms and remains separate from RUVIGZA's service fee.
-
-Our Process
-From Strategy to Performance.
-01
-Understand
-We learn about your business, audience, offer and goals.
-
-02
-Strategize
-We create a marketing strategy based on your objectives and budget.
-
-03
-Launch
-We launch targeted campaigns across the right platforms.
-
-04
-Connect
-We configure campaign destinations and conversion paths based on the agreed campaign requirements.
-
-05
-Optimize
-We monitor campaign performance and make data-driven optimizations based on performance and the agreed campaign scope.
-
-06
-Grow
-We use campaign insights to identify opportunities for further growth.
-
-FAQ
-Frequently Asked Questions
-Do you guarantee leads or sales?
-+
-Is the advertising budget included in your service fee?
-+
-Which platforms do you manage?
-+
-How is campaign optimization handled?
-+
-Do you provide ad creatives?
-+
-Do you work with small businesses?
-+
-Ready to Explore Your Growth Opportunities?
-Tell us about your business and advertising goals. Let's discuss how strategic performance advertising can support your growth.
-
-Book a Strategy Call
-Get In Touch
-Let's Talk About Your Business Growth
-Reach out directly and we'll get back to you.
-
-WhatsApp
-+91 8080193896
-Email
-hello@ruvigza.com
-Location
-Latur, Maharashtra, India
-Ruvigza Digital Technologies logo
-RUVIGZA Digital Technologies
-Turn Clicks Into Customers.
-
-Meta Ads • Google Ads • Campaign Strategy • Performance Optimization
-
-Quick Links
-Home
-Services
-Process
-About
-Contact
-Contact
-WhatsApp: +91 8080193896
-
-Email: hello@ruvigza.com
-
-Location: Latur, Maharashtra, India
-
-© 2026 RUVIGZA Digital Technologies. All Rights Reserved.
-
-Privacy Policy | Terms & Conditions we need this data on websitte please make a best website for my agency
-
-This project was built with [Lovable](https://lovable.dev).
-
-**Live app**: https://ruvigza-growth-hub.lovable.app
-
-## Build with Lovable
-
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/eb6220f6-632c-4d34-bbcf-5edd2f1a205a).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
-
-## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
-
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
-```
+## Dashboard preview and chatbot refinement
+- Added the supplied RuvigzaFlow dashboard screenshot to the featured RuvigzaFlow CRM + ERP demo card, labelled as a sample dashboard concept preview.
+- Restored the Home hero introduction and "Choose the path that fits your business" text to white with a stronger shadow for contrast.
+- Improved chatbot matching so specific questions such as "Tell me about RuvigzaFlow" prioritize the more specific topic instead of the generic company response.
+- Chatbot remains a local FAQ knowledge base. For open-ended AI answers, connect a backend service securely; do not expose secret API keys in browser code.
